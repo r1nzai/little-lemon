@@ -13,14 +13,14 @@ export default function Reservations() {
     const date = formData.get("date");
     const time = formData.get("time");
     const guests = formData.get("guests");
-    const occassion = formData.get("occassion");
+    const occasion = formData.get("occasion");
     localStorage.setItem(
       "reservation",
       JSON.stringify({
         date,
         time,
         guests,
-        occassion,
+        occasion,
       }),
     );
     window.location.href = "/reservations/confirmation";
@@ -65,8 +65,8 @@ export default function Reservations() {
           min={1}
           defaultValue={1}
         />
-        <label htmlFor="occassion">Occasion</label>
-        <Select name="occassion" id="occassion" required>
+        <label htmlFor="occasion">Occasion</label>
+        <Select name="occasion" id="occasion" required>
           <Select.Option value="birthday">Birthday</Select.Option>
           <Select.Option value="anniversary">Anniversary</Select.Option>
           <Select.Option value="engagement">Engagement</Select.Option>

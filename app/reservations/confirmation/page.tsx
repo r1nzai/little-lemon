@@ -29,7 +29,7 @@ export default function Confirmation() {
             on <strong>{reservation.date}</strong> at{" "}
             <strong>{reservation.time}</strong>
             <br />
-            for <strong>{reservation.occassion}</strong>.
+            for <strong>{reservation.occasion}</strong>.
           </p>
         </section>
       ) : (
