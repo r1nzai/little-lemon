@@ -7,7 +7,10 @@ import { cx } from "@/utils/cx";
 
 const Hero = () => {
   return (
-    <section className="h-[400px] bg-primary-main w-full px-5 md:px-40 2xl:px-80 relative flex items-center">
+    <section
+      className="h-[400px] bg-primary-main w-full px-5 md:px-40 2xl:px-80 relative flex items-center"
+      aria-description="A hero section with a background image of a plate of food and a title"
+    >
       <div className="flex flex-col justify-center w-[350px] max-h-[400px] overflow-hidden">
         <h1 className={cx(markazi.className, "text-7xl text-primary-alt")}>
           Little Lemon

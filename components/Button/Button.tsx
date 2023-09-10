@@ -11,6 +11,7 @@ const Button = (props: ButtonProps) => {
   const { className, children, ...rest } = props;
   return (
     <button
+      aria-label="A button for the user to click"
       className={cx(
         "bg-primary-alt text-black font-bold py-2 px-4 rounded-2xl",
         "hover:bg-primary-main hover:text-white",

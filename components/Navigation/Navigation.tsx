@@ -37,8 +37,10 @@ const Navigation = (props: NavigationProps) => {
     <nav
       className="flex md:h-32 h-24 items-center gap-10 lg:justify-between bg-white w-full px-5 md:px-40 2xl:px-80 transition-transform duration-300 sticky top-0 z-50"
       ref={navRef}
+      aria-description="A navigation bar with links for navigation and reservation and order online buttons"
     >
       <button
+        aria-label="Open Menu"
         className="flex items-center justify-center w-10 h-10 text-primary-main p-1 rounded  hover:bg-primary-main hover:text-white lg:hidden"
         onClick={() => {
           setShowMenu(!showMenu);
@@ -58,24 +60,37 @@ const Navigation = (props: NavigationProps) => {
           karla.className,
           "gap-7 items-center font-extrabold text-xl hidden lg:flex",
         )}
+        role="navigation"
       >
         <li className="">
-          <Link href="/">Home</Link>
+          <Link href="/" role="link">
+            Home
+          </Link>
         </li>
         <li className="">
-          <Link href="/#about">About</Link>
+          <Link href="/#about" role="link">
+            About
+          </Link>
         </li>
         <li className="">
-          <Link href="/#menu">Menu</Link>
+          <Link href="/#menu" role="link">
+            Menu
+          </Link>
         </li>
         <li className="">
-          <Link href="/reservations">Reservations</Link>
+          <Link href="/reservations" role="link">
+            Reservations
+          </Link>
         </li>
         <li className="">
-          <Link href="/order">Order Online</Link>
+          <Link href="/order" role="link">
+            Order Online
+          </Link>
         </li>
         <li className="">
-          <Link href="/login">Login</Link>
+          <Link href="/login" role="link">
+            Login
+          </Link>
         </li>
       </ul>
 
@@ -87,22 +102,34 @@ const Navigation = (props: NavigationProps) => {
           )}
         >
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/">Home</Link>
+            <Link href="/" role="link">
+              Home
+            </Link>
           </li>
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/#about">About</Link>
+            <Link href="/#about" role="link">
+              About
+            </Link>
           </li>
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/#menu">Menu</Link>
+            <Link href="/#menu" role="link">
+              Menu
+            </Link>
           </li>
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/reservations">Reservations</Link>
+            <Link href="/reservations" role="link">
+              Reservations
+            </Link>
           </li>
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/order">Order Online</Link>
+            <Link href="/order" role="link">
+              Order Online
+            </Link>
           </li>
           <li className="hover:bg-primary-main hover:text-white w-full h-fit p-5 text-center">
-            <Link href="/login">Login</Link>
+            <Link href="/login" role="link">
+              Login
+            </Link>
           </li>
         </ul>
       )}

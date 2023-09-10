@@ -15,6 +15,7 @@ interface SelectOptionProps
 const Select = (props: SelectProps) => {
   return (
     <select
+      aria-description="A select input with options for the user to choose from"
       className={cx(
         "font-extrabold h-14 text-primary-main bg-highlight-main px-5 rounded-md w-full",
         "focus:outline-none focus:ring-2 focus:ring-primary-main focus:border-transparent",

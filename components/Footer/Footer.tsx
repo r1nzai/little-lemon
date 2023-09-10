@@ -6,7 +6,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center min-h-96 bg-primary-main text-white w-full px-5 md:px-40 2xl:px-80">
+    <footer
+      className="flex flex-col items-center min-h-96 bg-primary-main text-white w-full px-5 md:px-40 2xl:px-80"
+      aria-description="A footer with links for navigation and contact information"
+    >
       <div className="grid grid-cols-2 md:grid-cols-3  xl:grid-cols-4 gap-5 p-5 place-items-center w-full">
         <Image
           src="/assets/images/footer.jpg"
@@ -69,6 +72,14 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center w-full p-5">
+        <p className={cx(karla.className, "text-center")}>
+          © 2023 Little Lemon. All rights reserved.
+        </p>
+        <p className={cx(karla.className, "text-center")}>
+          Designed by Parameswar Kishan
+        </p>
       </div>
     </footer>
   );
